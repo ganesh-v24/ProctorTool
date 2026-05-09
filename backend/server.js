@@ -75,7 +75,7 @@ const activeSockets = new Map();
 // =========================
 
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', service: 'aankh-v2-backend', db: mongoose.connection.readyState === 1 ? 'connected' : 'disconnected' });
+  res.json({ status: 'ok', service: 'ProctorTool-backend', db: mongoose.connection.readyState === 1 ? 'connected' : 'disconnected' });
 });
 
 // Auth
@@ -288,13 +288,13 @@ io.on('connection', (socket) => {
 // =========================
 
 const PORT = process.env.PORT || 5000;
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/aankh_v2';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/ProctorTool';
 
 mongoose.connect(MONGODB_URI)
   .then(() => {
     console.log('MongoDB connected');
     server.listen(PORT, () => {
-      console.log(`Aankh v2 backend running on port ${PORT}`);
+      console.log(`ProctorTool backend running on port ${PORT}`);
       console.log(`WebSocket endpoint: ws://localhost:${PORT}`);
     });
   })
@@ -302,6 +302,6 @@ mongoose.connect(MONGODB_URI)
     console.error('MongoDB connection failed:', err.message);
     console.log('Falling back to in-memory mode...');
     server.listen(PORT, () => {
-      console.log(`Aankh v2 backend running on port ${PORT} (in-memory fallback)`);
+      console.log(` backend running on port ${PORT} (in-memory fallback)`);
     });
   });

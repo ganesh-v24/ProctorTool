@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Aankh v2 - Proctor",
+  "name": "ProctorTool - Proctor",
   "version": "2.0.0",
   "description": "Real-time exam proctoring extension. Tracks tabs, fullscreen, devtools, and prevents copy-paste.",
   "permissions": [

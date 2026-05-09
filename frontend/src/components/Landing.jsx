@@ -25,7 +25,7 @@ export default function Landing({ setView }) {
   return (
     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh' }}>
       <div style={cardStyle}>
-        <h1 style={{ fontSize: '42px', marginBottom: '8px', color: '#38bdf8' }}>Aankh v2</h1>
+        <h1 style={{ fontSize: '42px', marginBottom: '8px', color: '#38bdf8' }}>ProctorTool</h1>
         <p style={{ color: '#94a3b8', marginBottom: '32px' }}>AI-Powered Exam Proctoring</p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
           <button

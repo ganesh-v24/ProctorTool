@@ -4,8 +4,8 @@
   let examActive = false;
 
   // Check if exam mode is active
-  chrome.storage.local.get(['aankh_exam_active'], (result) => {
-    examActive = !!result.aankh_exam_active;
+  chrome.storage.local.get(['ProctorTool_exam_active'], (result) => {
+    examActive = !!result.ProctorTool_active;
     if (examActive) enableProctoring();
   });
 
@@ -13,12 +13,12 @@
   chrome.runtime.onMessage.addListener((msg) => {
     if (msg.type === 'ACTIVATE_PROCTORING') {
       examActive = true;
-      chrome.storage.local.set({ aankh_exam_active: true });
+      chrome.storage.local.set({ ProctorTool_active: true });
       enableProctoring();
     }
     if (msg.type === 'DEACTIVATE_PROCTORING') {
       examActive = false;
-      chrome.storage.local.set({ aankh_exam_active: false });
+      chrome.storage.local.set({ ProctorTool_active: false });
       disableProctoring();
     }
   });

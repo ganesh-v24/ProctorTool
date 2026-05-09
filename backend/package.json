@@ -1,7 +1,7 @@
 {
-  "name": "aankh-v2-backend",
+  "name": "ProctorTool-backend",
   "version": "1.0.0",
-  "description": "Aankh v2 - Proctoring backend with WebSocket real-time events",
+  "description": "ProctorTool - Proctoring backend with WebSocket real-time events",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

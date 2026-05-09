@@ -1,5 +1,5 @@
 """
-Aankh v2 - ML Proctoring Service
+ProctorTool - ML Proctoring Service
 FastAPI + YuNet (OpenCV) + 6DRepNet for ultra-low-latency cheating detection
 
 Stack:
@@ -26,7 +26,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from PIL import Image
 
-app = FastAPI(title="Aankh v2 ML Service")
+app = FastAPI(title="ProctorTool ML Service")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -330,7 +330,7 @@ def health():
     pose_ok = HEAD_POSE_MODEL is not None
     return {
         "status": "ok",
-        "service": "aankh-v2-ml",
+        "service": "ProctorTool",
         "models": {
             "yunet": detector_ok,
             "6drepnet": pose_ok,

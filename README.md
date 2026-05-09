@@ -1,10 +1,10 @@
-# Aankh v2 - Modernized Proctoring System
+# ProctorTool - Modernized Proctoring System
 
 A faster, easier-to-deploy fork of [Aankh](https://github.com/tusharnankani/Aankh) with upgraded ML models, no MongoDB dependency, and real-time WebSocket proctoring.
 
 ## What Changed (vs Original)
 
-| Feature | Original | Aankh v2 |
+| Feature | Original | ProctorTool |
 |---------|----------|----------|
 | Database | MongoDB | In-memory (zero setup) |
 | ML Framework | TensorFlow Hub + OpenCV | MediaPipe + FastAPI |

@@ -9,11 +9,11 @@ function connectSocket() {
   socket = io(backendUrl);
 
   socket.on('connect', () => {
-    console.log('[Aankh] Connected to proctoring server');
+    console.log('[ProctorTool] Connected to proctoring server');
   });
 
   socket.on('warnings', (warnings) => {
-    console.log('[Aankh] Warnings received:', warnings);
+    console.log('[ProctorTool] Warnings received:', warnings);
   });
 }
 
