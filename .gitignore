@@ -1,0 +1,39 @@
+# Dependencies
+frontend/node_modules/
+backend/node_modules/
+
+# Build outputs
+frontend/dist/
+frontend/build/
+
+# Environment
+backend/.env
+frontend/.env
+.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+ml-service/venv/
+ml-service/.venv/
+
+# MongoDB data (if local)
+data/
+*.db
+
+# Large model files (app auto-downloads these)
+# Uncomment the next line if you DON'T want to commit the model:
+# ml-service/models/*.onnx
