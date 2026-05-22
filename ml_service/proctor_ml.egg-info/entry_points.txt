@@ -1,0 +1,2 @@
+[console_scripts]
+proctor-ml-server = proctor_ml.main:run

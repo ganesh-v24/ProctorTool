@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: proctor-ml
+Version: 0.1.0
+Summary: Ultra‑low‑latency proctoring ML service (YuNet, 6DRepNet, YOLO)
+Author: ProctorTool Team
+Author-email: ProctorTool Team <dev@example.com>
+License: MIT
+Project-URL: Homepage, https://github.com/yourorg/proctor-ml
+Keywords: proctoring,ml,fastapi,yolov,yolov11,yuNet,6DRepNet
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi
+Requires-Dist: uvicorn[standard]
+Requires-Dist: opencv-python
+Requires-Dist: pillow
+Requires-Dist: numpy
+Requires-Dist: ultralytics
+Requires-Dist: torch>=2.0; platform_machine != "arm64"
+Provides-Extra: sixdrepnet
+Requires-Dist: sixdrepnet; extra == "sixdrepnet"

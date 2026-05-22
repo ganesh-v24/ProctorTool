@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+opencv-python
+pillow
+numpy
+ultralytics
+
+[:platform_machine != "arm64"]
+torch>=2.0
+
+[sixdrepnet]
+sixdrepnet

@@ -1,0 +1,11 @@
+fastapi==0.115.0
+uvicorn==0.34.0
+python-multipart==0.0.20
+numpy==1.26.4
+opencv-python==4.11.0.86
+onnxruntime==1.21.0
+sixdrepnet==0.1.6
+Pillow==10.3.0
+torch==2.6.0
+torchvision==0.21.0
+webrtcvad-wheels==2.0.14

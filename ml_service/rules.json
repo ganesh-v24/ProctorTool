@@ -1,0 +1,27 @@
+[
+  {
+    "ruleId": "THRESHOLD_EXAMPLE",
+    "eventType": "TEMPERATURE",
+    "enabled": true,
+    "condition": {
+      "type": "threshold",
+      "thresholdMs": 75
+    },
+    "severity": "MEDIUM",
+    "penaltyPoints": 10,
+    "cooldownMs": 5000
+  },
+  {
+    "ruleId": "GAZE_AWAY_5S",
+    "eventType": "GAZE_AWAY",
+    "enabled": true,
+    "condition": {
+      "type": "duration",
+      "thresholdMs": 5000,
+      "windowMs": 10000
+    },
+    "severity": "MEDIUM",
+    "penaltyPoints": 8,
+    "cooldownMs": 10000
+  }
+]
